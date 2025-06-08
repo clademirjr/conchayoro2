@@ -17,5 +17,5 @@ jobs:
           the-caller: 'Myself'
 
       - name: Show random number
-        run: echo "random-number: ${{ steps.step-caller.outputs.random-number }}"
+        run: echo random-number ${{ steps.step-caller.outputs.random-number }}
         shell: bash
